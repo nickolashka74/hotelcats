@@ -1,5 +1,9 @@
-let unlock = true;
+var scroll = new SmoothScroll('a[href*="#"]', {
+	easing: 'easeInQuad'
+});
+
 //Menu
+let unlock = true;
 let iconMenu = document.querySelector(".header__burger");
 if (iconMenu != null) {
 	let delay = 500;

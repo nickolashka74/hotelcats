@@ -133,8 +133,6 @@
 	// .header__item
 
 	&__item {
-		font-weight: 600;
-		line-height: 19px;
 		margin-right: 30px;
 
 		&:last-child {
@@ -153,6 +151,7 @@
 	// .header__link
 
 	&__link {
+		font-weight: 600;
 		color: #1A212F;
 
 		&:hover {

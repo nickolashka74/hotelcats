@@ -1,0 +1,60 @@
+.title {
+	font-family: "Rubik";
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 43px;
+	// .title_main
+
+	&_main {
+		margin-bottom: 25px;
+		@include adaptiv-font(62, 52);
+	}
+}
+.btn {
+	position: relative;
+	padding: 15px 63px 16px 30px;
+	width: 206px;
+	background: #FF7236;
+	border-radius: 25px;
+	font-weight: 600;
+	font-size: 16px;
+	color: #FFFEFD;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 7px;
+		right: 7px;
+		width: 36px;
+		height: 36px;
+		border-radius: 50%;
+		background: #FFFEFD;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 16px;
+		right: 14px;
+		width: 21px;
+		height: 18px;
+		background: url('../img/icons/paw-orange.svg');
+	}
+
+	// .btn_main
+
+	&_main {
+		background: #FFFEFD;
+		color: #1A212F;
+		box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+
+		&::before {
+			background: #FF7236;
+		}
+
+		&::after {
+			background: url('../img/icons/paw-white.svg');
+		}
+	}
+}
+

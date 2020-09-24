@@ -1,0 +1,41 @@
+.main {
+	display: flex;
+	align-items: center;
+	padding-left: 198 / 1366 * 100%;
+	min-height: 504px;
+	background: linear-gradient(180deg, #FF9B53 0%, #F8B653 100%);
+
+	@media (min-width: $md3 + px) {
+		background: url('../img/main/main-bg.jpg') center / cover no-repeat;;
+	}
+
+	@media (max-width: $md4 + px) {
+		min-height: 404px;
+		padding: 0;
+		justify-content: center;
+	}
+
+	// .main__body
+
+	&__body {
+		padding: 0 15px;
+	}
+
+	// .main__city
+
+	&__city {
+		margin-bottom: 15px;
+		font-family: Lato;
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	// .main__subtitle
+
+	&__subtitle {
+		margin-bottom: 40px;
+		font-weight: 500;
+		@include adaptiv-font(20, 18);
+	}
+
+}
