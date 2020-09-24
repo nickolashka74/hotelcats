@@ -172,6 +172,7 @@ body.lock {
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 50;
 }
 
 .header::before {
@@ -186,6 +187,7 @@ body.lock {
 }
 
 .header__body {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,7 +202,7 @@ body.lock {
 
 .header__logo {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   -webkit-box-flex: 64px;
       -ms-flex: 64px 0 0px;
           flex: 64px 0 0;
@@ -213,7 +215,7 @@ body.lock {
 
 .header__list {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,7 +429,7 @@ body.lock {
 
   .header__burger {
     position: relative;
-    z-index: 3;
+    z-index: 2;
     display: block;
     width: 30px;
     height: 20px;
