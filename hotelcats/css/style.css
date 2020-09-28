@@ -140,7 +140,7 @@ h6 {
 body {
   font-weight: 400;
   color: #1A212F;
-  font-size: calc(14px + 2 * ((100vw - 320px) / 1046));
+  font-size: 16px;
 }
 
 body.lock {
@@ -313,16 +313,28 @@ body.lock {
   padding-top: 76px;
 }
 
+section {
+  margin-bottom: 140px;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
 .title {
   font-family: "Rubik";
   font-weight: 700;
-  font-size: 36px;
+  font-size: calc(30px + 6 * ((100vw - 320px) / 1046));
   line-height: 43px;
 }
 
 .title_main {
   margin-bottom: 25px;
   font-size: calc(52px + 10 * ((100vw - 320px) / 1046));
+}
+
+.title_center {
+  text-align: center;
 }
 
 .btn {
@@ -372,6 +384,12 @@ body.lock {
   background: url("../img/icons/paw-white.svg");
 }
 
+.subtitle {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: calc(20px + 2 * ((100vw - 320px) / 1046));
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -403,6 +421,66 @@ body.lock {
   font-size: calc(18px + 2 * ((100vw - 320px) / 1046));
 }
 
+.advantages {
+  position: relative;
+}
+
+.advantages::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -170px;
+  right: 0;
+  display: block;
+  width: 349px;
+  height: 426px;
+  background: url("../img/icons/advantages/advanrages-paw-bg.svg");
+}
+
+.advantages__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 50px -15px 0;
+}
+
+.advantages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 400px;
+          flex: 0 1 400px;
+  padding: 0 15px;
+  margin-top: 20px;
+}
+
+.advantages__content {
+  padding: 30px;
+  -webkit-box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+          box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 8px;
+}
+
+.advantages__icon {
+  margin-bottom: 35px;
+}
+
+.advantages__icon img {
+  width: 91px;
+  height: 91px;
+}
+
+.advantages__text {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
 @media (min-width: 767.98px) {
   .main {
     background: url("../img/main/main-bg.jpg") center/cover no-repeat;
@@ -418,6 +496,22 @@ body.lock {
 @media (max-width: 991.98px) {
   .container {
     max-width: 750px;
+  }
+
+  section {
+    margin-bottom: 100px;
+  }
+
+  .advantages__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+
+  .advantages__content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
   }
 }
 
@@ -553,11 +647,23 @@ body.lock {
   .footer-bottom__copy {
     margin-bottom: 15px;
   }
+
+  section {
+    margin-bottom: 50px;
+  }
+
+  .advantages__body {
+    margin: 0;
+  }
+
+  .advantages__item {
+    padding: 0;
+  }
 }
 
 @media (max-width: 479.98px) {
   .main {
-    min-height: 404px;
+    min-height: 380px;
     padding: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -567,6 +673,7 @@ body.lock {
 @supports (-webkit-appearance:none){
 .btn::after{background:url("../img/icons/paw-orange.svg")}
 .btn_main::after{background:url("../img/icons/paw-white.svg")}
+.advantages::before{background:url("../img/icons/advantages/advanrages-paw-bg.svg")}
 }
 
  @media (min-width: 767.98px){

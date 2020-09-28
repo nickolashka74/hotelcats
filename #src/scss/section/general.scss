@@ -1,13 +1,17 @@
 .title {
 	font-family: "Rubik";
 	font-weight: 700;
-	font-size: 36px;
+	@include adaptiv-font(36, 30);
 	line-height: 43px;
 	// .title_main
 
 	&_main {
 		margin-bottom: 25px;
 		@include adaptiv-font(62, 52);
+	}
+
+	&_center {
+		text-align: center;
 	}
 }
 .btn {
@@ -57,4 +61,8 @@
 		}
 	}
 }
-
+.subtitle {
+	font-family: "Rubik";
+	font-weight: 500;
+	@include adaptiv-font(22, 20);
+}

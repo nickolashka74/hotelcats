@@ -6,11 +6,11 @@
 	background: linear-gradient(180deg, #FF9B53 0%, #F8B653 100%);
 
 	@media (min-width: $md3 + px) {
-		background: url('../img/main/main-bg.jpg') center / cover no-repeat;;
+		background: url('../img/main/main-bg.jpg') center / cover no-repeat;
 	}
 
 	@media (max-width: $md4 + px) {
-		min-height: 404px;
+		min-height: 380px;
 		padding: 0;
 		justify-content: center;
 	}

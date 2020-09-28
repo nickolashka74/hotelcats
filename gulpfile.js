@@ -41,6 +41,7 @@ let path = {
 		js: [src_folder + "/js/app.js", src_folder + "/js/vendors.js"],
 		css: src_folder + "/scss/style.scss",
 		images: [src_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}", "!**/favicon.*"],
+		webp: [src_folder + "/img/**/*.{jpg,png}", "!**/favicon.*"],
 		fonts: src_folder + "/fonts/*.ttf"
 	},
 	watch: {
@@ -85,7 +86,7 @@ function css() {
 			})
 		)
 		.pipe(webpcss(
-			['.jpg', '.jpeg', '.png']
+			['.jpg', '.jpeg']
 		))
 		.pipe(dest(path.build.css))
 		.pipe(clean_css())
@@ -113,7 +114,7 @@ function js() {
 		.pipe(browsersync.stream());
 }
 function images() {
-	return src(path.src.images)
+	return src(path.src.webp)
 		.pipe(newer(path.build.images))
 		.pipe(
 			imagemin([
