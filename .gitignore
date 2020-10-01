@@ -9,7 +9,7 @@
 # production
 /build
 /dist
-/floristy
+/hotelcats
 
 # misc
 .DS_Store
