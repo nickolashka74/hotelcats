@@ -425,7 +425,7 @@ section:last-child {
   position: relative;
 }
 
-.advantages::before {
+.advantages::after {
   content: '';
   position: absolute;
   z-index: -1;
@@ -434,7 +434,7 @@ section:last-child {
   display: block;
   width: 349px;
   height: 426px;
-  background: url("../img/icons/advantages/advanrages-paw-bg.svg");
+  background: url("../img/icons/advantages/advantages-paw-bg.svg");
 }
 
 .advantages__body {
@@ -481,10 +481,48 @@ section:last-child {
   line-height: 1.4;
 }
 
-.rooms__body {
-  max-width: 1228px;
+._swiper {
+  overflow: hidden;
+}
+
+._swiper > div {
   width: 100%;
-  padding: 70px 30px 70px 12.29868%;
+  height: 100%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+._swiper.swiper-container-autoheight > div {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.swiper-container-initialized .swiper-slide {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.swiper-container-android .swiper-slide,
+.swiper-container-android .swiper-wrapper {
+  -webkit-transform: translate3d(0px, 0, 0);
+          transform: translate3d(0px, 0, 0);
+}
+
+.rooms {
+  position: relative;
+}
+
+.rooms__slider {
+  max-width: 1228px;
+}
+
+.rooms__slide {
+  padding: 70px 30px 70px 13.68078%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,7 +537,7 @@ section:last-child {
           flex: 0 1 600px;
   position: relative;
   z-index: -1;
-  padding-bottom: 38.75%;
+  padding-bottom: 38.6%;
 }
 
 .rooms__img img {
@@ -510,6 +548,7 @@ section:last-child {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px;
 }
 
 .rooms__content {
@@ -549,6 +588,128 @@ section:last-child {
   margin-bottom: 0;
 }
 
+.rooms__pagination,
+.reviews__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.rooms__pagination .swiper-pagination-bullet,
+.reviews__pagination .swiper-pagination-bullet {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-right: 12px;
+  border-radius: 50%;
+  background: #E1E1E1;
+  cursor: pointer;
+}
+
+.rooms__pagination .swiper-pagination-bullet:last-child,
+.reviews__pagination .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+
+.rooms__pagination .swiper-pagination-bullet-active,
+.reviews__pagination .swiper-pagination-bullet-active {
+  background: #FAC663;
+}
+
+.rooms__btn,
+.reviews__btn {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 36px;
+  height: 36px;
+  right: 168px;
+  bottom: 0;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.25);
+          box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.25);
+  cursor: pointer;
+}
+
+.rooms__btn::before,
+.reviews__btn::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: url("../img/icons/btn-next.svg") center no-repeat;
+}
+
+.rooms__btn_prev,
+.reviews__btn_prev {
+  right: 214px;
+}
+
+.rooms__btn_prev::before,
+.reviews__btn_prev::before {
+  background: url("../img/icons/btn-prev.svg") center no-repeat;
+}
+
+.reviews {
+  position: relative;
+}
+
+.reviews__slider {
+  padding: 70px 0;
+  margin-left: 7.17423%;
+}
+
+.reviews__slide {
+  -ms-flex-preferred-size: 470px;
+      flex-basis: 470px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 35px 35px 35px 70px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+          box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 8px;
+}
+
+.reviews__text {
+  margin-bottom: 25px;
+  font-weight: 500;
+  line-height: 1.4;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.reviews__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  color: #848484;
+}
+
 @media (min-width: 767.98px) {
   .main {
     background: url("../img/main/main-bg.jpg") center/cover no-repeat;
@@ -582,7 +743,7 @@ section:last-child {
             flex: 1 1 auto;
   }
 
-  .rooms__body {
+  .rooms__slide {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -750,7 +911,7 @@ section:last-child {
     padding: 0;
   }
 
-  .rooms__body {
+  .rooms__slide {
     padding: 20px 15px;
   }
 }
@@ -771,7 +932,9 @@ section:last-child {
 @supports (-webkit-appearance:none){
 .btn::after{background:url("../img/icons/paw-orange.svg")}
 .btn_main::after{background:url("../img/icons/paw-white.svg")}
-.advantages::before{background:url("../img/icons/advantages/advanrages-paw-bg.svg")}
+.advantages::after{background:url("../img/icons/advantages/advantages-paw-bg.svg")}
+.rooms__btn::before,.reviews__btn::before{background:url("../img/icons/btn-next.svg") center no-repeat}
+.rooms__btn_prev::before,.reviews__btn_prev::before{background:url("../img/icons/btn-prev.svg") center no-repeat}
 }
 
  @media (min-width: 767.98px){

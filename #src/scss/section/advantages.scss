@@ -1,7 +1,7 @@
 .advantages {
 	position: relative;
 
-	&::before {
+	&::after {
 		content: '';
 		position: absolute;
 		z-index: -1;
@@ -10,7 +10,8 @@
 		display: block;
 		width: 349px;
 		height: 426px;
-		background: url('../img/icons/advantages/advanrages-paw-bg.svg');
+		background: url('../img/icons/advantages/advantages-paw-bg.svg');
+		// background: url('../img/icons/advantages/paw.png') no-repeat;
 	}
 
 	// .advantages__body
