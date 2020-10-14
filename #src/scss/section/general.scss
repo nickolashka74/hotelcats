@@ -10,9 +10,16 @@
 		@include adaptiv-font(62, 52);
 	}
 
+	// .title_center
+
 	&_center {
 		text-align: center;
 	}
+}
+.subtitle {
+	font-family: "Rubik";
+	font-weight: 500;
+	@include adaptiv-font(22, 20);
 }
 .btn {
 	position: relative;
@@ -60,9 +67,4 @@
 			background: url('../img/icons/paw-white.svg');
 		}
 	}
-}
-.subtitle {
-	font-family: "Rubik";
-	font-weight: 500;
-	@include adaptiv-font(22, 20);
 }
