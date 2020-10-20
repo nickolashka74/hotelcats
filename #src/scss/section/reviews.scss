@@ -1,10 +1,40 @@
 .reviews {
 	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: -170px;
+		right: -35px;
+		display: block;
+		width: 340px;
+		height: 285px;
+		background: url('../img/icons/bg/reviews-paw-bg.svg') no-repeat;
+
+		@media(max-width: $md2 + px) {
+			display: none;
+		}
+	}
+
 	// .reviews__slider
 
 	&__slider {
 		padding: 70px 0;
 		margin-left: 98 / 1366 * 100%;
+
+		@media(max-width: 1366px) {
+			padding: 70px 30px;
+			margin-left: 0;
+		}
+
+		@media(max-width: $md2 + px) {
+			padding: 50px 15px;
+		}
+
+		@media(max-width: $md3 + px) {
+			padding: 20px 15px 35px;
+		}
 	}
 
 	// .reviews__slide
@@ -28,12 +58,25 @@
 			font-size: 72px;
 			color: #FAC663;
 		}
+
+		@media(max-width: 1366px) {
+			flex-basis: auto;
+		}
+
+		@media(max-width: $md2 + px) {
+			padding: 25px 25px 25px 45px;
+
+			&::before {
+				top: 20px;
+				left: 15px;
+			}
+		}
 	}
 
 	// .reviews__text
 
 	&__text {
-		margin-bottom: 25px;
+		margin-bottom: 15px;
 		font-weight: 500;
 		line-height: 1.4;
 		flex-grow: 1;
@@ -44,17 +87,20 @@
 	&__footer {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 		font-size: 14px;
 		color: #848484;
 	}
 
-	// .reviews__author
+	// .reviews__author,
+	// // .reviews__date
 
-	&__author {
+	&__author,
+	&__date {
+		margin-top: 10px;
 	}
 
-	// .reviews__date
-
-	&__date {
+	&__author {
+		margin-right: 15px;
 	}
 }

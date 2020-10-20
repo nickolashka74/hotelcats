@@ -103,8 +103,7 @@ let slider_reviews = new Swiper('.reviews__slider', {
 	// direction: 'vertical',
 	observer: true,
 	observeParents: true,
-	slidesPerView: 2.6,
-	spaceBetween: 30,
+	// slidesPerView: 1,
 	// slidesOffsetAfter: 300,
 	// centeredSlides: true,
 	autoHeight: false,
@@ -124,27 +123,24 @@ let slider_reviews = new Swiper('.reviews__slider', {
 		nextEl: '.reviews__btn_next',
 		prevEl: '.reviews__btn_prev',
 	},
-	/*
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
-			spaceBetween: 0,
-			autoHeight: true,
+			spaceBetween: 15,
 		},
 		768: {
 			slidesPerView: 2,
-			spaceBetween: 20,
+			spaceBetween: 15,
 		},
 		992: {
-			slidesPerView: 3,
-			spaceBetween: 20,
+			slidesPerView: 2,
+			spaceBetween: 30,
 		},
-		1268: {
-			slidesPerView: 4,
+		1366: {
+			slidesPerView: 2.6,
 			spaceBetween: 30,
 		},
 	},
-	*/
 	// on: {
 	// 	lazyImageReady: function () {
 	// 		ibg();

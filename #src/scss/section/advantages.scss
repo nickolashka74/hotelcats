@@ -1,7 +1,7 @@
 .advantages {
 	position: relative;
 
-	&::after {
+	&::before {
 		content: '';
 		position: absolute;
 		z-index: -1;
@@ -10,8 +10,11 @@
 		display: block;
 		width: 349px;
 		height: 426px;
-		background: url('../img/icons/advantages/advantages-paw-bg.svg');
-		// background: url('../img/icons/advantages/paw.png') no-repeat;
+		background: url('../img/icons/bg/advantages-paw-bg.svg') no-repeat;
+
+		@media(max-width: $md2 + px) {
+			display: none;
+		}
 	}
 
 	// .advantages__body
@@ -50,6 +53,7 @@
 		padding: 30px;
 		box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
 		border-radius: 8px;
+		background: #FFFFFF;
 
 		@media (max-width: $md2 + px) {
 			flex: 1 1 auto;	

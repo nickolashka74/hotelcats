@@ -1,4 +1,4 @@
-var scroll = new SmoothScroll('a[href*="#"]', {
+let scroll = new SmoothScroll('a[href*="#"]', {
 	easing: 'easeInQuad'
 });
 

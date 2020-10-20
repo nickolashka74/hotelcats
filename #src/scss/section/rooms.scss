@@ -1,6 +1,22 @@
 .rooms {
 	position: relative;
 
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: 5px;
+		left: 0;
+		display: block;
+		width: 484px;
+		height: 151px;
+		background: url('../img/icons/bg/rooms-fish-bg.svg') no-repeat;
+
+		@media(max-width: $md2 + px) {
+			display: none;
+		}
+	}
+
 	// .rooms__slider
 
 	&__slider {
