@@ -1,5 +1,5 @@
-let scroll = new SmoothScroll('a[href*="#"]', {
-	easing: 'easeInQuad'
+var scroll = new SmoothScroll('a[href*="#"]', {
+	easing: 'easeInQuad',
 });
 
 //Menu
