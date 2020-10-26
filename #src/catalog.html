@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"Наши номера"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('_header.html',{
+				"anchor1": "index.html#why",
+				"anchor2": "catalog.html",
+				"anchor3": "index.html#reviews",
+				"anchor4": "index.html#contacts"
+			})
+			<main class="page">
+
+				<section class="banner">
+					<div class="container">
+						<div class="banner__body">
+							<h2 class="banner__title">Каждый 7-й день<br><span>бесплатно!</span></h2>
+							<div class="banner__subtitle">Акция действует при размещении в номерах “Люкс” и “Супер-Люкс” </div>
+							<button class="btn btn_banner">Забронировать</button>
+						</div>
+					</div>
+				</section>
+
+				@@include('_contacts.html',{})
+			</main>
+			@@include('_footer.html',{})
+		</div>
+		@@include('_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>

@@ -47,7 +47,7 @@
 	&__img {
 		flex: 0 1 600px;
 		position: relative;
-		z-index: -1;
+		display: block;
 		padding-bottom: 38.6%;
 
 		img {
@@ -64,6 +64,8 @@
 	// .rooms__content
 
 	&__content {
+		position: relative;
+		z-index: 1;
 		flex: 0 1 500px;
 		margin-left: -70px;
 		padding: 40px 30px 40px 100 / 1030 * 100%;

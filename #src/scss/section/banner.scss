@@ -1,0 +1,53 @@
+.banner {
+	position: relative;
+	padding: 78px 0;
+	background: url('../img/bg/banner-bg.jpg') center / cover no-repeat;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		display: block;
+		width: 241px;
+		height: 206px;
+		background-image: url(../img/icons/bg/banner-paw-bg.svg);
+	}
+
+	@media(max-width: $md3 + px) {
+		padding: 50px 0;
+	}
+
+	@media(max-width: $md4 + px) {
+		padding: 30px 0;
+	}
+
+	// .banner__body
+
+	&__body {
+		position: relative;
+		z-index: 1;
+	}
+
+	// .banner__title
+
+	&__title {
+		margin-bottom: 25px;
+		font-family: "Rubik";
+		font-weight: 700;
+		@include adaptiv-font(36, 30);
+
+		span {
+			margin-top: 15px;
+			@include adaptiv-font(56, 46);
+		}
+	}
+
+	// .banner__subtitle
+
+	&__subtitle {
+		max-width: 260px;
+		margin-bottom: 35px;
+		font-size: 16px;
+		line-height: 1.4;
+	}
+}
