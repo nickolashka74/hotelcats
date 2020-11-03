@@ -10,9 +10,9 @@
 		margin-bottom: 60px;
 	}
 
-	// .catalog__sort
+	// .catalog__select
 
-	&__sort {
+	&__select {
 	}
 
 	// .catalog__body
@@ -48,11 +48,26 @@
 	// .catalog__img
 
 	&__img {
-		margin-bottom: 25px;
+		display: block;
 
 		img {
 			border-radius: 6px 6px 0px 0px;
 		}
+	}
+
+	// .catalog__wrapper
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		padding: 25px 20px;
+	}
+
+	// .catalog__link
+
+	&__link {
+		color: #1a212f;
 	}
 
 	// .catalog__list
@@ -65,27 +80,41 @@
 		li:not(:last-child) {
 			margin-bottom: 15px;
 		}
-	}
 
-	// .catalog__icons
-
-	&__icons {
-		display: flex;
-		align-items: center;
-		margin-left: 12px;
-
-		& > li {
-			margin-right: 8px;
-			width: 16px;
-			height: 16px;
-
-			// &:last-child {
-			// 	margin-right: 0;
-			// }	
+		span {
+			display: inline-block;
+			margin-left: 10px;
+			font-size: 18px;
+			font-weight: 500;
 		}
 	}
 }
-.sort {
+.icons {
+	display: flex;
+
+	// .icons__list
+
+	&__list {
+		display: flex;
+		align-items: center;
+		margin-left: 12px;
+	}
+
+	// .icons__item
+
+	&__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 8px;
+		width: 16px;
+		height: 16px;
+		cursor: pointer;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
 }
 .form {
 
@@ -97,18 +126,65 @@
 	// .form__item
 
 	&__item {
+		margin-bottom: 35px;
 	}
 
 	// .form__label
 
 	&__label {
+		font-weight: 500;
+		margin-bottom: 20px;
+	}
+
+	// .form__wrapper
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
 	}
 
 	// .form__input
 
 	&__input {
+		padding: 7px 5px;
+		width: 100px;
+		height: 24px;
+		border: 1px solid #E1E1E1;
+
+		&:placeholder {
+			font-size: 14px;
+			color: #1A212F;
+		}
+	}
+
+	// .form__btn
+
+	&__btn {
+		width: 185px;
+		height: 42px;
+		background: #FAC663;
+		border-radius: 25px;
+		font-size: 14px;
+		font-weight: 600;
 	}
 }
-.icons {
-	display: flex;
+.checkbox {
+
+	// .checkbox__item
+
+	&__item {
+		margin-bottom: 15px;
+	}
+
+	// .checkbox__input
+
+	&__input {
+		margin-right: 10px;
+	}
+
+	// .checkbox__label
+
+	&__label {
+		font-size: 14px;
+	}
 }

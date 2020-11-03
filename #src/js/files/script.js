@@ -70,3 +70,76 @@ function body_lock_add(delay) {
 	}
 }
 //=================
+
+//Tippy
+tippy('.emptyRoom', {
+	content: "Пустой номер",
+	theme: 'hotelcats',
+	duration: 400,
+	onMount(instance) {
+		const box = instance.popper.firstElementChild;
+		requestAnimationFrame(() => {
+		  box.classList.add('animated');
+		  box.classList.add('rubberBand');
+		});
+	  },
+	  onHidden(instance) {
+		const box = instance.popper.firstElementChild;
+		box.classList.remove('animated');
+		box.classList.remove('rubberBand');
+	  },
+  });
+
+  tippy('.sunbed', {
+	content: "Лежак",
+	theme: 'hotelcats',
+	duration: 400,
+	onMount(instance) {
+		const box = instance.popper.firstElementChild;
+		requestAnimationFrame(() => {
+		  box.classList.add('animated');
+		  box.classList.add('rubberBand');
+		});
+	  },
+	  onHidden(instance) {
+		const box = instance.popper.firstElementChild;
+		box.classList.remove('animated');
+		box.classList.remove('rubberBand');
+	  },
+  });
+
+  tippy('.scratchingPost', {
+	content: "Когтеточка",
+	theme: 'hotelcats',
+	duration: 400,
+	onMount(instance) {
+		const box = instance.popper.firstElementChild;
+		requestAnimationFrame(() => {
+		  box.classList.add('animated');
+		  box.classList.add('rubberBand');
+		});
+	  },
+	  onHidden(instance) {
+		const box = instance.popper.firstElementChild;
+		box.classList.remove('animated');
+		box.classList.remove('rubberBand');
+	  },
+  });
+
+  tippy('.gameComplex', {
+	content: "Игровой комплекс",
+	theme: 'hotelcats',
+	duration: 400,
+	onMount(instance) {
+		const box = instance.popper.firstElementChild;
+		requestAnimationFrame(() => {
+		  box.classList.add('animated');
+		  box.classList.add('rubberBand');
+		});
+	  },
+	  onHidden(instance) {
+		const box = instance.popper.firstElementChild;
+		box.classList.remove('animated');
+		box.classList.remove('rubberBand');
+	  },
+  });

@@ -21,6 +21,9 @@
 	@include adaptiv-font(22, 20);
 }
 .btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: relative;
 	padding: 15px 63px 16px 30px;
 	width: 206px;
@@ -66,5 +69,9 @@
 		&::after {
 			background: url('../img/icons/paw-white.svg');
 		}
+	}
+
+	&_catalog {
+		width: 100%;
 	}
 }

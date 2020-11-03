@@ -17,95 +17,167 @@
 					<div class="container">
 						<div class="catalog__header">
 							<h1 class="title">Наши номера</h1>
-							<div class="catalog__sort sort">
-								<select name="sort">
-									<option value="square up">По площади</option>
-									<option value="square down">По площади</option>
-									<option value="price up">По цене</option>
-									<option value="price down">По цене</option>
-								</select>
-							</div>
+							<select name="catalog__select">
+								<option value="square up">По площади</option>
+								<option value="square down">По площади</option>
+								<option value="price up">По цене</option>
+								<option value="price down">По цене</option>
+							</select>
 						</div>
 						<div class="catalog__body">
 							<div class="catalog__form form">
 								<form action="#" id="form" class="form__body">
 									<div class="form__item">
-										<label for="" class="form__label">Цена за сутки,₽</label>
-										<input type="text" class="form__input">
+										<div class="form__label">Цена за сутки,₽</div>
+										<div class="form__wrapper">
+											<input type="text" class="form__input" placeholder="от 100" value="">
+											<input type="text" class="form__input" placeholder="до 600" value="">
+										</div>
 									</div>
+
+									<div class="form__item">
+										<div class="form__label">Площадь</div>
+										<div class="checkbox">
+											<div class="checkbox__item">
+												<input id="0.63" type="checkbox" name="square" class="checkbox__input">
+												<label for="0.63" class="checkbox__label">0,63 м2</label>
+											</div>
+											<div class="checkbox__item">
+												<input id="0.90" type="checkbox" name="square" class="checkbox__input">
+												<label for="0.90" class="checkbox__label">0,90 м2</label>
+											</div>
+											<div class="checkbox__item">
+												<input id="1.13" type="checkbox" name="square" class="checkbox__input">
+												<label for="1.13" class="checkbox__label">1,13 м2</label>
+											</div>
+											<div class="checkbox__item">
+												<input id="1.56" type="checkbox" name="square" class="checkbox__input">
+												<label for="1.56" class="checkbox__label">1,56 м2</label>
+											</div>
+											<div class="checkbox__item">
+												<input id="2.56" type="checkbox" name="square" class="checkbox__input">
+												<label for="2.56" class="checkbox__label">2,56 м2</label>
+											</div>
+											<div class="checkbox__item">
+												<input id="2.88" type="checkbox" name="square" class="checkbox__input">
+												<label for="2.88" class="checkbox__label">2,88 м2</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="form__item">
+										<div class="form__label">Оснащение номера</div>
+										<div class="checkbox">
+											<div class="checkbox__item">
+												<input id="emptyRoom" type="checkbox" name="roomFacilities" class="checkbox__input">
+												<label for="emptyRoom" class="checkbox__label">Пустой номер</label>
+											</div>
+											<div class="checkbox__item">
+												<input id="sunbed" type="checkbox" name="roomFacilities" class="checkbox__input">
+												<label for="sunbed" class="checkbox__label">Лежак</label>
+											</div>
+											<div class="checkbox__item">
+												<input id="scratchingPost" type="checkbox" name="roomFacilities" class="checkbox__input">
+												<label for="scratchingPost" class="checkbox__label">Когтеточка</label>
+											</div>
+											<div class="checkbox__item">
+												<input id="gameComplex" type="checkbox" name="roomFacilities" class="checkbox__input">
+												<label for="gameComplex" class="checkbox__label">Игровой-комплекс</label>
+											</div>
+											<div class="checkbox__item">
+												<input id="home" type="checkbox" name="roomFacilities" class="checkbox__input">
+												<label for="home" class="checkbox__label">Домик</label>
+											</div>
+										</div>
+									</div>
+
+									<button type="submit" class="form__btn">Применить</button>
 								</form>
 							</div>
+
 							<div class="catalog__content">
 								<div class="catalog__item">
-									<div class="catalog__img">
+									<a href="#" class="catalog__img">
 										<img src="img/catalog/cat-1.jpg" alt="cat">
+									</a>
+									<div class="catalog__wrapper">
+										<a href="#" class="catalog__link">
+											<h2 class="subtitle">Эконом</h2>
+										</a>
+										<ul class="catalog__list">
+											<li>Размеры (ШхГхВ) - 90х70х180 см</li>
+											<li>Площадь - 0,63 м2</li>
+											<li class="icons">
+												Оснащение номера
+												<div class="icons__list">
+													<div class="icons__item emptyRoom">
+														<img src="img/icons/catalog/icon-1.svg" alt="icon-1">
+													</div>
+												</div>
+											</li>
+											<li>Цена за сутки:<span>100₽</span></li>
+										</ul>
+										<button class="btn btn_catalog">Забронировать</button>
 									</div>
-									<h2 class="subtitle">Эконом</h2>
-									<ul class="catalog__list">
-										<li>Размеры (ШхГхВ) - 90х70х180 см</li>
-										<li>Площадь - 0,63 м2</li>
-										<li class="icons">
-											Оснащение номера
-											<ul class="catalog__icons">
-												<li>
-													<img src="img/icons/catalog/icon-1.svg" alt="icon-1">
-												</li>
-											</ul>
-										</li>
-										<li>Цена за сутки: <span>100₽</span></li>
-									</ul>
-									<button class="btn">Забронировать</button>
 								</div>
 
 								<div class="catalog__item">
-									<div class="catalog__img">
+									<a href="#" class="catalog__img">
 										<img src="img/catalog/cat-2.jpg" alt="cat">
+									</a>
+									<div class="catalog__wrapper">
+										<a href="#" class="catalog__link">
+											<h2 class="subtitle">Эконом плюс</h2>
+										</a>
+										<ul class="catalog__list">
+											<li>Размеры (ШхГхВ) - 90х100х180 см</li>
+											<li>Площадь - 0,90 м2</li>
+											<li class="icons">
+												Оснащение номера
+												<div class="icons__list">
+													<div class="icons__item sunbed">
+														<img src="img/icons/catalog/icon-2.svg" alt="icon-2">
+													</div>
+													<div class="icons__item scratchingPost">
+														<img src="img/icons/catalog/icon-3.svg" alt="icon-3">
+													</div>
+												</div>
+											</li>
+											<li>Цена за сутки:<span>200₽</span></li>
+										</ul>
+										<button class="btn btn_catalog">Забронировать</button>
 									</div>
-									<h2 class="subtitle">Эконом плюс</h2>
-									<ul class="catalog__list">
-										<li>Размеры (ШхГхВ) - 90х100х180 см</li>
-										<li>Площадь - 0,90 м2</li>
-										<li class="icons">
-											Оснащение номера
-											<ul class="catalog__icons">
-												<li>
-													<img src="img/icons/catalog/icon-2.svg" alt="icon-2">
-												</li>
-												<li>
-													<img src="img/icons/catalog/icon-3.svg" alt="icon-3">
-												</li>
-											</ul>
-										</li>
-										<li>Цена за сутки: <span>200₽</span></li>
-									</ul>
-									<button class="btn">Забронировать</button>
 								</div>
 
 								<div class="catalog__item">
-									<div class="catalog__img">
+									<a href="#" class="catalog__img">
 										<img src="img/catalog/cat-3.jpg" alt="cat">
+									</a>
+									<div class="catalog__wrapper">
+										<a href="#" class="catalog__link">
+											<h2 class="subtitle">Комфорт</h2>
+										</a>
+										<ul class="catalog__list">
+											<li>Размеры (ШхГхВ) - 100х125х180 см</li>
+											<li>Площадь - 1,13 м2</li>
+											<li class="icons">
+												Оснащение номера
+												<div class="icons__list">
+													<div class="icons__item sunbed">
+														<img src="img/icons/catalog/icon-2.svg" alt="icon-2">
+													</div>
+													<div class="icons__item scratchingPost">
+														<img src="img/icons/catalog/icon-3.svg" alt="icon-3">
+													</div>
+													<div class="icons__item gameComplex">
+														<img src="img/icons/catalog/icon-4.svg" alt="icon-4">
+													</div>
+												</div>
+											</li>
+											<li>Цена за сутки:<span>250₽</span></li>
+										</ul>
+										<button class="btn btn_catalog">Забронировать</button>
 									</div>
-									<h2 class="subtitle">Комфорт</h2>
-									<ul class="catalog__list">
-										<li>Размеры (ШхГхВ) - 100х125х180 см</li>
-										<li>Площадь - 1,13 м2</li>
-										<li class="icons">
-											Оснащение номера
-											<ul class="catalog__icons">
-												<li>
-													<img src="img/icons/catalog/icon-2.svg" alt="icon-2">
-												</li>
-												<li>
-													<img src="img/icons/catalog/icon-3.svg" alt="icon-3">
-												</li>
-												<li>
-													<img src="img/icons/catalog/icon-4.svg" alt="icon-4">
-												</li>
-											</ul>
-										</li>
-										<li>Цена за сутки: <span>250₽</span></li>
-									</ul>
-									<button class="btn">Забронировать</button>
 								</div>
 							</div>
 						</div>
