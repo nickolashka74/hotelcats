@@ -32,8 +32,14 @@
 
 	&__content {
 		flex: 0 0 900px;
-		display: flex;
+		// display: flex;
 		margin: 0 -15px;
+	}
+
+	// .catalog__wrapper
+
+	&__wrapper{
+		display: flex;
 	}
 
 	// .catalog__item
@@ -55,13 +61,13 @@
 		}
 	}
 
-	// .catalog__wrapper
+	// .catalog__inner
 
-	&__wrapper {
+	&__inner {
 		display: flex;
 		flex-direction: column;
 		flex-grow: 1;
-		padding: 25px 20px;
+		padding: 25px 19px;
 	}
 
 	// .catalog__link
@@ -74,6 +80,7 @@
 
 	&__list {
 		flex-grow: 1;
+		// flex: 1 0 auto;
 		margin: 20px 0 25px;
 		font-size: 14px;
 
