@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"Наши номера"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('_header.html',{
+				"anchor1": "index.html#why",
+				"anchor2": "catalog.html",
+				"anchor3": "index.html#reviews",
+				"anchor4": "index.html#contacts"
+			})
+            <main class="page">
+
+                <section class="cart">
+                    <div class="container">
+                        <div class="cart__columns">
+                            <div class="cart__main">
+                                <div class="cart__thumbnails thumbnails">
+                                    <ul class="thumbnails__list _swiper">
+                                        <li class="thumbnails__item">
+                                            <img src="img/cart/thumbnail/thumbnail1.jpg" alt="thumbnail1" class="thumbnails__img">
+                                        </li>
+                                        <li class="thumbnails__item">
+                                            <img src="img/cart/thumbnail/thumbnail2.jpg" alt="thumbnail2" class="thumbnails__img">
+                                        </li>
+                                        <li class="thumbnails__item">
+                                            <img src="img/cart/thumbnail/thumbnail3.jpg" alt="thumbnail3" class="thumbnails__img">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cart__slider _swiper">
+                                    <div class="cart__slide">
+                                        <img src="img/cart/image1.jpg" alt="image1">
+                                    </div>
+                                    <div class="cart__slide">
+                                        <img src="img/cart/image2.jpg" alt="image2">
+                                    </div>
+                                    <div class="cart__slide">
+                                        <img src="img/cart/image3.jpg" alt="image3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart__desc">
+                                <h2 class="cart__title">Супер-Люкс</h2>
+                                <div class="cart__block">
+                                    <div class="cart__text">Размеры (ШхГхВ) - 180х160х180 см</div>
+                                    <div class="cart__text">Площадь - 2,88 м2</div>
+                                    <div class="cart__text">Оснащение номера</div>
+                                    <ul class="cart__list">
+                                        <li class="cart__item cart__item--sunbed">Лежак</li>
+                                        <li class="cart__item cart__item--home">Домик</li>
+                                        <li class="cart__item cart__item--gameComplex">Игровой комплекс - 3 яруса</li>
+                                        <li class="cart__item cart__item--scratchingPost">Когтеточка</li>
+                                    </ul>
+                                    <div class="cart__text">Цена за сутки:<span>600₽</span></div>
+                                </div>
+                                <button class="btn">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                @@include('_rooms.html',{
+					"title":"Другие номера"
+				})
+
+                @@include('_contacts.html',{})
+            </main>
+            @@include('_footer.html',{})
+		</div>
+		@@include('_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>

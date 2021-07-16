@@ -151,3 +151,71 @@ let slider_reviews = new Swiper('.reviews__slider', {
 	//	el: '.swiper-scrollbar',
 	//},
 });
+
+let slider_cart = new Swiper('.cart__slider', {
+	/*
+	effect: 'fade',
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: false,
+	},
+	*/
+	// direction: 'vertical',
+	observer: true,
+	observeParents: true,
+	slidesPerView: 1,
+	spaceBetween: 0,
+	// slidesOffsetAfter: 300,
+	// centeredSlides: true,
+	autoHeight: false,
+	speed: 800,
+	//touchRatio: 0,
+	//simulateTouch: false,
+	//loop: true,
+	//preloadImages: false,
+	//lazy: true,
+	// Dotts
+	// pagination: {
+	// 	el: '.reviews__pagination',
+	// 	clickable: true,
+	// },
+	// // Arrows
+	// navigation: {
+	// 	nextEl: '.reviews__btn_next',
+	// 	prevEl: '.reviews__btn_prev',
+	// },
+	thumbs: {
+		swiper: {
+			el: '.thumbnails__list',
+			slidesPerView: 3,
+			width: '70px',
+		}
+	},
+	// breakpoints: {
+	// 	320: {
+	// 		slidesPerView: 1,
+	// 		spaceBetween: 15,
+	// 	},
+	// 	768: {
+	// 		slidesPerView: 2,
+	// 		spaceBetween: 15,
+	// 	},
+	// 	992: {
+	// 		slidesPerView: 2,
+	// 		spaceBetween: 30,
+	// 	},
+	// 	1366: {
+	// 		slidesPerView: 2.6,
+	// 		spaceBetween: 30,
+	// 	},
+	// },
+	// on: {
+	// 	lazyImageReady: function () {
+	// 		ibg();
+	// 	},
+	// }
+	// And if we need scrollbar
+	//scrollbar: {
+	//	el: '.swiper-scrollbar',
+	//},
+});
